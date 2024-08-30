@@ -1,16 +1,25 @@
-# db_minier_app
 
-A new Flutter project.
 
-## Getting Started
+</div>
+ <h1 align=" center">🔥QUOTE APP
+ <h1>Description :</h1>
+ <p>
+ To create a Quote app using Flutter with GetX, JSON data, and SQLite, start by setting up the Flutter project. Use GetX for state management and dependency injection. Parse the initial quote data from a JSON file and store it in an SQLite database for persistent storage. Create a model class for quotes with fields like id, quote, author, and category. Implement a database helper class to handle CRUD operations. Use GetX controllers to manage app state and interactions with the database. Display the quotes in a ListView, allowing users to save favorites or share quotes easily.
+   
+ </p>
+<div align="center">
+  <img src="https://github.com/harshdusane2103/DB_Minier_App/blob/master/sp.png" width=21%,height=35%>
+  <img src="https://github.com/harshdusane2103/DB_Minier_App/blob/master/home.png" width=21%,height=35%>
+  
+</div>
+<div align="center">
+    <video src="https://github.com/user-attachments/assets/e11ae1d9-b9d0-426e-95d3-34ccebe61181">
+ 
+</div>
+<div align = "center">
+<a  href="https://github.com/harshdusane2103/DB_Minier_App/tree/master/lib">👉 Go To Dart File 👈</a>
+</div>
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.

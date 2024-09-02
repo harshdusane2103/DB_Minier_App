@@ -1,352 +1,500 @@
+
 [
   {
     "quote": "Love is not about how much you say 'I love you', but how much you can prove that it's true.",
     "author": "Unknown",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "The greatest thing you'll ever learn is just to love and be loved in return.",
     "author": "Eden Ahbez",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "True love is eternal, infinite, and always like itself. It is equal and pure, without violent demonstrations: it is seen with white hairs and is always young in the heart.",
     "author": "Honore de Balzac",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "To love is nothing. To be loved is something. But to love and be loved, that’s everything.",
     "author": "T. Tolis",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "Love is when the other person's happiness is more important than your own.",
     "author": "H. Jackson Brown, Jr.",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "Love cures people—both the ones who give it and the ones who receive it.",
     "author": "Karl Menninger",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "Love is composed of a single soul inhabiting two bodies.",
     "author": "Aristotle",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "The best thing to hold onto in life is each other.",
     "author": "Audrey Hepburn",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "You know you're in love when you can't fall asleep because reality is finally better than your dreams.",
     "author": "Dr. Seuss",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
     "quote": "Love does not dominate; it cultivates.",
     "author": "Johann Wolfgang von Goethe",
-    "category": "Love"
+    "category": "Love",
+    "isFavorite": 0
   },
   {
-    "quote": "Life is what happens when you're busy making other plans.",
-    "author": "John Lennon",
-    "category": "Life"
-  },
-  {
-    "quote": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.",
-    "author": "Ralph Waldo Emerson",
-    "category": "Life"
-  },
-  {
-    "quote": "In three words I can sum up everything I've learned about life: it goes on.",
-    "author": "Robert Frost",
-    "category": "Life"
-  },
-  {
-    "quote": "Do not take life too seriously. You will never get out of it alive.",
-    "author": "Elbert Hubbard",
-    "category": "Life"
-  },
-  {
-    "quote": "Good friends, good books, and a sleepy conscience: this is the ideal life.",
-    "author": "Mark Twain",
-    "category": "Life"
-  },
-  {
-    "quote": "Life is really simple, but we insist on making it complicated.",
-    "author": "Confucius",
-    "category": "Life"
-  },
-  {
-    "quote": "Life is a journey that must be traveled no matter how bad the roads and accommodations.",
-    "author": "Oliver Goldsmith",
-    "category": "Life"
-  },
-  {
-    "quote": "Keep smiling, because life is a beautiful thing and there's so much to smile about.",
-    "author": "Marilyn Monroe",
-    "category": "Life"
-  },
-  {
-    "quote": "Dost thou love life? Then do not squander time, for that is the stuff life is made of.",
-    "author": "Benjamin Franklin",
-    "category": "Life"
-  },
-  {
-    "quote": "You have within you right now, everything you need to deal with whatever the world can throw at you.",
-    "author": "Brian Tracy",
-    "category": "Life"
-  },
-  {
-    "quote": "Family is not an important thing. It's everything.",
-    "author": "Michael J. Fox",
-    "category": "Family and Friends"
-  },
-  {
-    "quote": "The love of family and the admiration of friends is much more important than wealth and privilege.",
-    "author": "Charles Kuralt",
-    "category": "Family and Friends"
-  },
-  {
-    "quote": "To us, family means putting your arms around each other and being there.",
-    "author": "Barbara Bush",
-    "category": "Family and Friends"
-  },
-  {
-    "quote": "Family is the most important thing in the world.",
-    "author": "Princess Diana",
-    "category": "Family and Friends"
-  },
-  {
-    "quote": "Friends are the family you choose.",
-    "author": "Jess C. Scott",
-    "category": "Family and Friends"
-  },
-  {
-    "quote": "In family life, love is the oil that eases friction, the cement that binds closer together, and the music that brings harmony.",
-    "author": "Friedrich Nietzsche",
-    "category": "Family and Friends"
-  },
-  {
-    "quote": "A happy family is but an earlier heaven.",
-    "author": "George Bernard Shaw",
-    "category": "Family and Friends"
-  },
-  {
-    "quote": "A friend is one who overlooks your broken fence and admires the flowers in your garden.",
+    "quote": "Tears are words the heart can't express.",
     "author": "Unknown",
-    "category": "Family and Friends"
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "The family is one of nature's masterpieces.",
-    "author": "George Santayana",
-    "category": "Family and Friends"
+    "quote": "The pain you feel today is the strength you feel tomorrow.",
+    "author": "Unknown",
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "The bond that links your true family is not one of blood, but of respect and joy in each other's life.",
-    "author": "Richard Bach",
-    "category": "Family and Friends"
+    "quote": "It's hard to forget someone who gave you so much to remember.",
+    "author": "Unknown",
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "Happiness is not something ready made. It comes from your own actions.",
-    "author": "Dalai Lama",
-    "category": "Happy"
+    "quote": "Sometimes you have to give up on people, not because you don’t care, but because they don’t.",
+    "author": "Unknown",
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "For every minute you are angry you lose sixty seconds of happiness.",
-    "author": "Ralph Waldo Emerson",
-    "category": "Happy"
+    "quote": "The saddest thing about betrayal is that it never comes from your enemies.",
+    "author": "Unknown",
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "The most important thing is to enjoy your life—to be happy—it's all that matters.",
-    "author": "Audrey Hepburn",
-    "category": "Happy"
+    "quote": "Sadness flies away on the wings of time.",
+    "author": "Jean de La Fontaine",
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "Happiness depends upon ourselves.",
-    "author": "Aristotle",
-    "category": "Happy"
+    "quote": "Every time I thought I was being rejected from something good, I was actually being redirected to something better.",
+    "author": "Dr. Steve Maraboli",
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "Count your age by friends, not years. Count your life by smiles, not tears.",
-    "author": "John Lennon",
-    "category": "Happy"
+    "quote": "The only thing more exhausting than being depressed is pretending that you’re not.",
+    "author": "Unknown",
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "Happiness is when what you think, what you say, and what you do are in harmony.",
-    "author": "Mahatma Gandhi",
-    "category": "Happy"
+    "quote": "Sometimes the person you want the most is the person you’re best without.",
+    "author": "Unknown",
+    "category": "Sad",
+    "isFavorite": 0
   },
   {
-    "quote": "The best way to cheer yourself up is to try to cheer somebody else up.",
-    "author": "Mark Twain",
-    "category": "Happy"
+    "quote": "The heart was made to be broken.",
+    "author": "Oscar Wilde",
+    "category": "Sad",
+    "isFavorite": 0
   },
-  {
-    "quote": "The secret of happiness is to find a congenial monotony.",
-    "author": "V. S. Pritchett",
-    "category": "Happy"
-  },
-  {
-    "quote": "Happiness is not by chance, but by choice.",
-    "author": "Jim Rohn",
-    "category": "Happy"
-  },
-  {
-    "quote": "The only joy in the world is to begin.",
-    "author": "Cesare Pavese",
-    "category": "Happy"
-  },
+
   {
     "quote": "Keep your face always toward the sunshine—and shadows will fall behind you.",
     "author": "Walt Whitman",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "The only limit to our realization of tomorrow is our doubts of today.",
     "author": "Franklin D. Roosevelt",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "Positive anything is better than negative nothing.",
     "author": "Elbert Hubbard",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "Believe you can and you're halfway there.",
     "author": "Theodore Roosevelt",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "The most wasted of days is one without laughter.",
     "author": "E. E. Cummings",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "Let us make our future now, and let us make our dreams tomorrow's reality.",
     "author": "Malala Yousafzai",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "You are never too old to set another goal or to dream a new dream.",
     "author": "C.S. Lewis",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "With the new day comes new strength and new thoughts.",
     "author": "Eleanor Roosevelt",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "Start where you are. Use what you have. Do what you can.",
     "author": "Arthur Ashe",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
   },
   {
     "quote": "The power of imagination makes us infinite.",
     "author": "John Muir",
-    "category": "Positive"
+    "category": "Positive",
+    "isFavorite": 0
+  },
+
+  {
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "category": "Motivation",
+    "isFavorite": 0
   },
   {
-    "quote": "The only true wisdom is in knowing you know nothing.",
-    "author": "Socrates",
-    "category": "Wisdom"
+    "quote": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.",
+    "author": "Albert Schweitzer",
+    "category": "Motivation",
+    "isFavorite": 0
   },
   {
-    "quote": "Turn your wounds into wisdom.",
-    "author": "Oprah Winfrey",
-    "category": "Wisdom"
+    "quote": "You are never too old to set another goal or to dream a new dream.",
+    "author": "C.S. Lewis",
+    "category": "Motivation",
+    "isFavorite": 0
   },
   {
-    "quote": "Knowing yourself is the beginning of all wisdom.",
-    "author": "Aristotle",
-    "category": "Wisdom"
+    "quote": "The best way to predict the future is to create it.",
+    "author": "Peter Drucker",
+    "category": "Motivation",
+    "isFavorite": 0
   },
   {
-    "quote": "The wise man does at once what the fool does finally.",
-    "author": "Niccolò Machiavelli",
-    "category": "Wisdom"
+    "quote": "The only limit to our realization of tomorrow is our doubts of today.",
+    "author": "Franklin D. Roosevelt",
+    "category": "Motivation",
+    "isFavorite": 0
   },
   {
-    "quote": "It is not the man who has too little, but the man who craves more, that is poor.",
-    "author": "Seneca",
-    "category": "Wisdom"
+    "quote": "Believe you can and you're halfway there.",
+    "author": "Theodore Roosevelt",
+    "category": "Motivation",
+    "isFavorite": 0
   },
   {
-    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    "quote": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "category": "Motivation",
+    "isFavorite": 0
+  },
+  {
+    "quote": "You miss 100% of the shots you don’t take.",
+    "author": "Wayne Gretzky",
+    "category": "Motivation",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Do not wait to strike till the iron is hot, but make it hot by striking.",
+    "author": "William Butler Yeats",
+    "category": "Motivation",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Hardships often prepare ordinary people for an extraordinary destiny.",
+    "author": "C.S. Lewis",
+    "category": "Motivation",
+    "isFavorite": 0
+  },
+
+  {
+    "quote": "The best way to find yourself is to lose yourself in the service of others.",
+    "author": "Mahatma Gandhi",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "You can make more friends in two months by becoming genuinely interested in other people than you can in two years by trying to get other people interested in you.",
+    "author": "Dale Carnegie",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "People don't care how much you know until they know how much you care.",
+    "author": "Theodore Roosevelt",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "The only thing worse than being blind is having sight but no vision.",
+    "author": "Helen Keller",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "In the end, we will remember not the words of our enemies, but the silence of our friends.",
+    "author": "Martin Luther King Jr.",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "To handle yourself, use your head; to handle others, use your heart.",
+    "author": "Eleanor Roosevelt",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "The way to get started is to quit talking and begin doing.",
+    "author": "Walt Disney",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "People may forget what you said, but they will never forget how you made them feel.",
+    "author": "Maya Angelou",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "You must be the change you wish to see in the world.",
+    "author": "Mahatma Gandhi",
+    "category": "People",
+    "isFavorite": 0
+  },
+  {
+    "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
     "author": "Ralph Waldo Emerson",
-    "category": "Wisdom"
+    "category": "People",
+    "isFavorite": 0
   },
-  {
-    "quote": "Knowledge speaks, but wisdom listens.",
-    "author": "Jimi Hendrix",
-    "category": "Wisdom"
-  },
-  {
-    "quote": "Wisdom is not a product of schooling but of the lifelong attempt to acquire it.",
-    "author": "Albert Einstein",
-    "category": "Wisdom"
-  },
-  {
-    "quote": "Wisdom begins in wonder.",
-    "author": "Socrates",
-    "category": "Wisdom"
-  },
-  {
-    "quote": "Patience is the companion of wisdom.",
-    "author": "Saint Augustine",
-    "category": "Wisdom"
-  },
+
   {
     "quote": "Attitude is a little thing that makes a big difference.",
     "author": "Winston Churchill",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "Your attitude, not your aptitude, will determine your altitude.",
     "author": "Zig Ziglar",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "Excellence is not a skill, it's an attitude.",
     "author": "Ralph Marston",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "A positive attitude can really make dreams come true—it did for me.",
     "author": "David Bailey",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "A bad attitude is like a flat tire. If you don't change it, you'll never go anywhere.",
     "author": "Joyce Meyer",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "Weakness of attitude becomes weakness of character.",
     "author": "Albert Einstein",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "The only disability in life is a bad attitude.",
     "author": "Scott Hamilton",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "If you don't like something, change it. If you can't change it, change your attitude.",
     "author": "Maya Angelou",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "Adopting the right attitude can convert a negative stress into a positive one.",
     "author": "Hans Selye",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
   },
   {
     "quote": "A strong, positive attitude will create more miracles than any wonder drug.",
     "author": "Patricia Neal",
-    "category": "Attitude"
+    "category": "Attitude",
+    "isFavorite": 0
+  },
+
+  {
+    "quote": "The only true wisdom is in knowing you know nothing.",
+    "author": "Socrates",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Turn your wounds into wisdom.",
+    "author": "Oprah Winfrey",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Knowing yourself is the beginning of all wisdom.",
+    "author": "Aristotle",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "The wise man does at once what the fool does finally.",
+    "author": "Niccolò Machiavelli",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "It is not the man who has too little, but the man who craves more, that is poor.",
+    "author": "Seneca",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Do not go where the path may lead, go instead where there is no path and leave a trail.",
+    "author": "Ralph Waldo Emerson",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Knowledge speaks, but wisdom listens.",
+    "author": "Jimi Hendrix",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Wisdom is not a product of schooling but of the lifelong attempt to acquire it.",
+    "author": "Albert Einstein",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Wisdom begins in wonder.",
+    "author": "Socrates",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Patience is the companion of wisdom.",
+    "author": "Saint Augustine",
+    "category": "Wisdom",
+    "isFavorite": 0
+  },
+
+  {
+    "quote": "Family is not an important thing. It's everything.",
+    "author": "Michael J. Fox",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "The love of family and the admiration of friends is much more important than wealth and privilege.",
+    "author": "Charles Kuralt",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "To us, family means putting your arms around each other and being there.",
+    "author": "Barbara Bush",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Family is the most important thing in the world.",
+    "author": "Princess Diana",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "Friends are the family you choose.",
+    "author": "Jess C. Scott",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "In family life, love is the oil that eases friction, the cement that binds closer together, and the music that brings harmony.",
+    "author": "Friedrich Nietzsche",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "A happy family is but an earlier heaven.",
+    "author": "George Bernard Shaw",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "A friend is one who overlooks your broken fence and admires the flowers in your garden.",
+    "author": "Unknown",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "The family is one of nature's masterpieces.",
+    "author": "George Santayana",
+    "category": "Family",
+    "isFavorite": 0
+  },
+  {
+    "quote": "The bond that links your true family is not one of blood, but of respect and joy in each other's life.",
+    "author": "Richard Bach",
+    "category": "Family",
+    "isFavorite": 0
   }
 ]
+
+
+
+
+
+
+
+
+
+
+

@@ -1,30 +1,26 @@
 
 class QuoteModal {
-  late String author, quote, category;
-  bool isFavorite;
+  final int? id;
+  String author, quote, category;
+  int isFavorite;
 
   QuoteModal({
+    this.id,
     required this.author,
     required this.quote,
     required this.category,
-     this.isFavorite=false,
+    required this.isFavorite,
   });
 
-  factory QuoteModal.fromJson(Map<String, dynamic> json) {
+  factory QuoteModal.fromJson(Map json) {
     return QuoteModal(
-      author: json['author'] ?? 'Unknown',
-      quote: json['quote'] ?? '',
-      category: json['category'] ?? 'General',
-      isFavorite: json['isFavorite']==1,
+      id: json['id'],
+      author: json['author'] ,
+      quote: json['quote'] ,
+      category: json['category'],
+      isFavorite: json['isFavorite'],
     );
   }
 
-  Map<String, dynamic> toJson() {
-    return {
-      'author': author,
-      'quote': quote,
-      'category': category,
-      'isFavorite':isFavorite?0:1,
-    };
+
   }
-}

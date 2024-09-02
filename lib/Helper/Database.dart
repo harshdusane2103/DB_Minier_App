@@ -40,10 +40,10 @@ class DatabaseHelper {
       String quote, String author, String category, int isFavourite) async {
     final db = await database;
     String sql = '''
-    INSERT INTO $tableName (quote, author, category)
-    VALUES (?, ?, ?)
+    INSERT INTO $tableName (quote, author, category, isFavourite)
+    VALUES (?, ?, ?, ?)
     ''';
-    List args = [quote, author, category];
+    List args = [quote, author, category, isFavourite];
     return await db!.rawInsert(sql, args);
   }
 
@@ -55,7 +55,7 @@ class DatabaseHelper {
     final map = await db!.rawQuery(sql);
     return List.generate(
       map.length,
-          (index) => QuoteModal.fromJson(map[index]),
+      (index) => QuoteModal.fromJson(map[index]),
     );
   }
 

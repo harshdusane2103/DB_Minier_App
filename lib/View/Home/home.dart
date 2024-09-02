@@ -1,6 +1,8 @@
+import 'package:db_minier_app/Controller/Controller.dart';
 import 'package:db_minier_app/Utils/golabal.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+var controller=Get.put(QuoteController());
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -8,53 +10,25 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   bottom: PreferredSize(preferredSize:Size(0, 10) , child:
-      //
-      //   ),
-      // ),
-      // drawer: Drawer(
-      //   child: SingleChildScrollView(
-      //     child: Column(
-      //       children: [
-      //         DrawerHeader(
-      //           child: Text(
-      //             'Gmail',
-      //             style: TextStyle(color: Colors.red, fontSize: 24),
-      //           ),
-      //         ),
-      //         ...List.generate(
-      //           iconlist.length,
-      //           (index) => ListTile(
-      //             leading: Icon(iconlist[index]['icon']),
-      //             title: Text(iconlist[index]['text']),
-      //             tileColor: Colors.black,
-      //           ),
-      //         ),
-      //       ],
-      //     ),
-      //   ),
-      // ),
       body: Column(
         children: [
-          SizedBox(height: 50),
+          SizedBox(height: 40),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
               children: [
                 Container(
                   height: 50,
-                  width: 80,
+                  width: 60,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: Colors.white, width: 2),
+                    border: Border.all(color: Colors.white, width: 3),
                   ),
-                  child: InkWell(
-                    onTap: () {
-                      Scaffold.of(context).openDrawer();
-                    },
-                    child: Icon(Icons.menu, color: Colors.black),
-                  ),
+                  child: GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushNamed('/like');
+                      },
+                      child: Icon(Icons.category)),
                 ),
                 SizedBox(
                   width: 5,
@@ -71,166 +45,200 @@ class HomeScreen extends StatelessWidget {
                 SizedBox(
                   width: 5,
                 ),
-                categoryBox("assets/image/happy.png", "Happy"),
-                SizedBox(
-                  width: 5,
+                ...List.generate(
+                  categoryList.length,
+                  (index) => Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                    child: GestureDetector(
+                        onTap: () {
+                          controller.categoryWish(index);
+                          Navigator.of(context).pushNamed('/simple');
+                        },
+                        child: categoryBox(categoryList[index]['image'],
+                            categoryList[index]["category"])),
+                  ),
                 ),
-                InkWell(
-                    onTap: () {
-
-                    },
-                    child: categoryBox("assets/image/people.png", "People")),
-                SizedBox(
-                  width: 5,
-                ),
-                categoryBox("assets/image/positive.png", "Positive"),
-                SizedBox(
-                  width: 5,
-                ),
-                categoryBox("assets/image/wisdom.jpeg", "Wisdom"),
               ],
             ),
           ),
           Expanded(
-            child: ListView.builder(
-              itemCount: controller.QuoteList.length,
-              itemBuilder: (context, index) => Container(
-                height: 400,
-                width: 410,
-                decoration: BoxDecoration(
-                  // color: Colors.red,
-                ),
-                child: Column(
-                  children: [
-                    InkWell(
-                      onTap: () {
-                        Navigator.of(context).pushNamed('/Detail');
-                      },
-                      child: Container(
-                        height: 340,
-                        width: 410,
-                        decoration: BoxDecoration(
-                            color: Colors.red,
-                            image: DecorationImage(
-                                fit: BoxFit.cover,
-                                image: AssetImage(controller.GoalImageList[index % 10]))),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text(
-                              controller.QuoteList[index].category,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 20),
-                            ),
-                            SizedBox(height: 5),
-                            Text(
-                              controller.QuoteList[index].quote,
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 16),
-                            ),
-                            SizedBox(height: 10),
-                            Text(
-                              '-' + ' ' + '${controller.QuoteList[index].author}',
-                              style: TextStyle(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18),
-                            ),
-                          ],
+            child: Obx(
+              () => ListView.builder(
+                itemCount: controller.QuoteList.length,
+                itemBuilder: (context, index) => Container(
+                  height: 400,
+                  width: 410,
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                  ),
+                  child: Column(
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          selectedIndex=index;
+                          Navigator.of(context).pushNamed('/Detail');
+                        },
+                        child: Container(
+                          height: 340,
+                          width: 410,
+                          decoration: BoxDecoration(
+                              color: Colors.red,
+                              image: DecorationImage(
+                                  fit: BoxFit.cover,
+                                  image: AssetImage(GoalImageList[
+                                      index % GoalImageList.length]))),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                controller.QuoteList[index].category,
+                                style: const TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 20),
+                              ),
+                              SizedBox(height: 5),
+                              Text(
+                                controller.QuoteList[index].quote,
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16),
+                              ),
+                              SizedBox(height: 10),
+                              Text(
+                                '-' +
+                                    ' ' +
+                                    '${controller.QuoteList[index].author}',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
-                    Container(
-                      height: 60,
-                      width: 400,
-                      decoration: BoxDecoration(color: Colors.white),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Text(
-                            '+29.4k',
-                            style: TextStyle(color: Colors.purple),
-                          ),
-                          OutlinedButton(
-                            onPressed: () {},
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
-                                Icon(
-                                  Icons.share,
-                                  color: Colors.purple,
-                                ),
-                                SizedBox(width: 2),
-                                Text(
-                                  'Share',
-                                  style: TextStyle(color: Colors.purple),
-                                )
-                              ],
+                      Container(
+                        height: 60,
+                        width: 400,
+                        decoration: BoxDecoration(color: Colors.white),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            Text(
+                              '+29.4k',
+                              style: TextStyle(color: Colors.purple),
                             ),
-                          ),
-                          ElevatedButton(
-                            onPressed: () {},
-                            child: SingleChildScrollView(
+                            OutlinedButton(
+                              onPressed: () {},
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
                                 children: [
                                   Icon(
-                                    Icons.save_alt_outlined,
+                                    Icons.share,
                                     color: Colors.purple,
                                   ),
                                   SizedBox(width: 2),
                                   Text(
-                                    'Download',
+                                    'Share',
                                     style: TextStyle(color: Colors.purple),
                                   )
                                 ],
                               ),
                             ),
-                          ),
-                          IconButton(
-                            onPressed: () {
-                              // checking that quote exists in the list or not
-                              controller.checkFavouriteExistBefore(
-                                  controller.QuoteList[index]);
-                              controller.toggleColorOfFavourite(index);
-                            },
-                            icon: (controller.QuoteList[index].isFavorite)
-                                ? const Icon(
-                              Icons.favorite,
-                              color: Colors.red,
-                              size: 24,
-                            )
-                                : const Icon(
-                              Icons.favorite_border_outlined,
-                              color: Colors.purple,
-                              size: 24,
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: const SingleChildScrollView(
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Icon(
+                                      Icons.save_alt_outlined,
+                                      color: Colors.purple,
+                                    ),
+                                    SizedBox(width: 2),
+                                    Text(
+                                      'Download',
+                                      style: TextStyle(color: Colors.purple),
+                                    )
+                                  ],
+                                ),
+                              ),
                             ),
-                          ),
-                        ],
+                            IconButton(
+                              onPressed: () {
+                                controller.addToFavourite(controller.QuoteList[index].isFavorite, index);
+                              },
+                              icon: Icon(Icons.favorite,color: (controller.QuoteList[index].isFavorite==1)?Colors.red:Colors.grey,),
+                            ),
+                            // IconButton(
+                            //     onPressed: () {
+                            //       // checking that quote exist before in list or not
+                            //       controller.insertFavouriteQuote(controller.favouriteQuotes[index]);
+                            //       controller.toggleColorOfFavourite(index);
+                            //     },
+                            //         icon: Icon(
+                            //           (controller.favouriteQuotes[index].isFavorite == 0)
+                            //               ? Icons.favorite_border_rounded
+                            //               : Icons.favorite,
+                            //           color:
+                            //           (controller.favouriteQuotes[index].isFavorite == 1)
+                            //               ? Colors.red
+                            //               : Colors.grey,
+                            //         ),
+                            //   ),
+
+                           // IconButton(
+                           //        onPressed: () {
+                           //          if (controller.QuoteList[index].isFavorite == 0) {
+                           //            controller.favourite(
+                           //                1, controller.QuoteList[index].isFavorite);
+                           //            favController.insertData(
+                           //              controller.QuoteList[index].quote,
+                           //              controller.QuoteList[index].category,
+                           //              controller.QuoteList[index].author,
+                           //              controller.QuoteList[index].isFavorite,
+                           //            );
+                           //          } else {
+                           //            controller.favourite(0, controller.QuoteList[index].isFavorite);
+                           //            favController.removeFavouriteData(
+                           //                favController.QuoteList[index].isFavorite);
+                           //          }
+                           //        },
+                           //        icon: controller.dataList[index]['like'] == 0
+                           //            ? const Icon(
+                           //          size: 30,
+                           //          Icons.favorite_border,
+                           //          color: Colors.white,
+                           //        )
+                           //            : const Icon(
+                           //          size: 30,
+                           //          Icons.favorite,
+                           //          color: Colors.red,
+                           //        )),
+
+
+                          ],
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
           )
-
-
         ],
       ),
-
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: Colors.white,
         selectedItemColor: Colors.red,
         unselectedItemColor: Colors.grey,
         currentIndex: selectedIndex,
         // onTap: (index) {
-        //
-        //   selectedIndex = index;
+        //   controller.bottomBar(index);
         //
         //   // Add your navigation logic here
         // },
@@ -244,7 +252,11 @@ class HomeScreen extends StatelessWidget {
             label: 'Audios',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.bookmarks),
+            icon: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pushNamed('/base');
+                },
+                child: Icon(Icons.category)),
             label: 'Save',
           ),
           BottomNavigationBarItem(
@@ -268,7 +280,7 @@ class HomeScreen extends StatelessWidget {
 Container categoryBox(String image, String text) {
   return Container(
     height: 50,
-    width: 120,
+    width: 140,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(20),
       border: Border.all(color: Colors.white, width: 3),
@@ -283,15 +295,16 @@ Container categoryBox(String image, String text) {
           backgroundImage: AssetImage(image),
         ),
         SizedBox(
-          width: 5,
+          width: 8,
         ),
         Text(
           text,
-          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          style: TextStyle(
+              color: Colors.black, fontWeight: FontWeight.bold, fontSize: 16),
         )
       ],
     ),
   );
 }
 
-int selectedIndex = 0;
+// int selectedIndex = 0;
